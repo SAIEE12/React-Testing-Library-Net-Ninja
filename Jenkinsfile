@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/SAIEE12/React-Testing-Library-Net-Ninja.git', branch: 'main'
+                git url: 'https://github.com/SAIEE12/React-Testing-Library-Net-Ninja.git', branch: 'master'
             }
         }
         stage('Install Dependencies') {
