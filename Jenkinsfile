@@ -1,9 +1,8 @@
 pipeline {
     agent any
     environment {
-        NODEJS_HOME = tool name: 'nodejs' // Ensure you?ve defined a NodeJS tool in Jenkins.
+        NODEJS_HOME = tool name: 'nodejs'
         PATH = "${NODEJS_HOME}/bin:${env.PATH}"
-        NODE_OPTIONS = "--openssl-legacy-provider"
     }
     stages {
         stage('Checkout') {
